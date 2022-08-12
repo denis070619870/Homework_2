@@ -1,6 +1,5 @@
 ﻿// Определить количество цифр в числе
 
-//Console.WriteLine();
 Console.WriteLine("Введите число, чтобы определить из скольки цифр оно состоит: ");
 string n = Console.ReadLine();
 int num = Convert.ToInt32(n);
