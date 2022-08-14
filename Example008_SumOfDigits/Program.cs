@@ -1,16 +1,16 @@
 ﻿// Подсчитать сумму цифр в числе
 
 Console.WriteLine("Введите число, чтобы сумму цифр из которых оно состоит: ");
-string n = Console.ReadLine();
-int num = Convert.ToInt32(n);
-int result = num;
+int n = int.Parse(Console.ReadLine());
 
-int count = 0;
+int sum = 0;
+int digit = 0;
 
-while (result > 0)
+while (n > 0)
 {
-    result = result / 10;
-    count++;
+    digit = n % 10;
+    sum = sum + digit;
+    n = n / 10;
 }
-Console.WriteLine($"В числе{num} имеется {count} чисел.");
-Console.WriteLine();
+
+Console.WriteLine($"Сумма всех чисел в числе{n} будет составлять: {sum}");
