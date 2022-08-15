@@ -1,20 +1,8 @@
 ﻿// Найти расстояние между точками в пространстве 2D/3D
 
-
-int a = new Random().Next(10, 21);
-Console.Write(a);
-
-Console.WriteLine("Ввеите число, на которое нужно проверить кратность выбранного числа: ");
-int b = int.Parse(Console.ReadLine());
-
-d = sqrt((xb-xa)^2 + (yb-ya)^2+(zb-za)^2) // Формула расстояния
-
-
-
-
-int numPlan = 3;            // количество осей координат
-int min = -5;               // минимальное значение диапазона для выбора случайных чисел
-int max = 6;                // максимальное значение диапазона ...
+int numPlan = 3;
+int min = -10;
+int max = 11;
 
 int[] PointCoords(int numPlan)                  
 {
@@ -54,5 +42,4 @@ Console.Write($"Координаты точки А: ");
 PrintCoords(PointA);
 Console.Write($"Координаты точки B: ");
 PrintCoords(PointB);
-
 Console.WriteLine($"Расстояние между точками А и В: {Distance(PointA, PointB)}");
