@@ -12,5 +12,5 @@ while (result > 0)
     result = result / 10;
     count++;
 }
-Console.WriteLine($"В числе{num} имеется {count} чисел.");
+Console.WriteLine($"В числе: {num} имеется {count} чисел.");
 Console.WriteLine();
