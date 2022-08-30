@@ -9,7 +9,11 @@ while (count <= n)
 {
     if (count % 2 == 0)
     {
-        Console.WriteLine(count * count * count);
+        int cubNumber = count * count * count;
+        if (cubNumber % 2 == 0) 
+        {
+            Console.Write(cubNumber + " ");
+        }
     }
     count = count + 1;
 }
